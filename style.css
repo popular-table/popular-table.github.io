@@ -1,3 +1,5 @@
+
+/* Main backgroun pic */
 html {
   background: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1531&q=80")
     no-repeat center center fixed;
@@ -11,8 +13,8 @@ body {
   font-family: "Comfortaa", cursive;
   font-size: 62.5%;
   box-sizing: border-box;
+  text-align: center;
 }
-
 
 body * {
   max-width: 100%;
@@ -27,6 +29,18 @@ body * {
   align-items: center;
 }
 
+h1 {
+  font-size: 4rem;
+  letter-spacing: 0.9rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+
+/* Main page text */
 .mainTitle {
   padding-right: 4%;
   margin-top: 10%;
@@ -38,22 +52,6 @@ body * {
   align-items: center;
 }
 
-.mainContact {
-  padding-right: 4%;
-  margin-bottom: 30%;
-  max-width: 70%;
-  align-self: flex-end;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  font-size: 4rem;
-  letter-spacing: 0.9rem;
-}
-
 .mainTitle h3 {
   font-size: 3rem;
   font-style: italic;
@@ -61,6 +59,10 @@ h1 {
 
 .mainContact h3 {
   font-size: 3rem;
+}
+
+#email {
+  font-size: 1.5rem;
 }
 
 .contactLink {
@@ -72,12 +74,9 @@ h1 {
   justify-self: flex-end;
 }
 
-h4 {
-  font-size: 3rem;
-}
-
+/* for small screens */
 @media only screen and (max-width: 800px) {
-  
+  /* Different picture */
   html {
     background: url("https://images.unsplash.com/photo-1481931098730-318b6f776db0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=637&q=80");
       no-repeat center center fixed;
@@ -85,14 +84,6 @@ h4 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
-
-  body * {
-    max-width: 100%;
-  }
-
-  .container {
-    max-width: 100%;
   }
 
   .mainTitle {
@@ -104,6 +95,7 @@ h4 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    text-shadow: 2px 1px white;
   }
 
   h1 {
