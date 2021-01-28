@@ -70,3 +70,22 @@ h1 {
 h4 {
   font-size: 3rem;
 }
+
+@media only screen and (max-width: 800px) {
+  body {
+  }
+
+  .mainTitle {
+    padding: 4%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mainTitle * {
+    border: 1px solid black;
+  }
+}
