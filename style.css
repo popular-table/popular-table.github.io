@@ -84,8 +84,4 @@ h4 {
     align-items: center;
     text-align: center;
   }
-
-  .mainTitle * {
-    border: 1px solid black;
-  }
 }
