@@ -10,16 +10,19 @@ html {
 body {
   font-family: "Comfortaa", cursive;
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
+
 body * {
-  /* border: 1px solid black; */
+  max-width: 100%;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  max-width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -72,10 +75,27 @@ h4 {
 }
 
 @media only screen and (max-width: 800px) {
-  body {
+  
+  html {
+    background: url("https://images.unsplash.com/photo-1481931098730-318b6f776db0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=637&q=80");
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  body * {
+    max-width: 100%;
+  }
+
+  .container {
+    max-width: 100%;
   }
 
   .mainTitle {
+    border: 1px solid black;
+    max-width: 70%;
     padding: 4%;
     margin: auto;
     display: flex;
@@ -84,4 +104,16 @@ h4 {
     align-items: center;
     text-align: center;
   }
+
+  h1 {
+    font-size: 3rem;
+    letter-spacing: .5rem;
+  }
+
+  .mainTitle h3 {
+    font-size: 2rem;
+    font-style: italic;
+    text-shadow: 2px 1px white;
+  }
+
 }
