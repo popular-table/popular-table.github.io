@@ -1,6 +1,46 @@
+html {
+  background: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1531&q=80")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
-    font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
+  font-size: 62.5%;
+}
+
+body * {
+  /* border: 1px solid black; */
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mainTitle {
+  padding-right: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
+  font-size: 5rem;
+  letter-spacing: 0.9rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 3rem;
 }
