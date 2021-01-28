@@ -18,13 +18,26 @@ body * {
 
 .container {
   display: flex;
+  flex-direction: column;
   height: 100vh;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
 .mainTitle {
-  padding-right: 3%;
+  padding-right: 4%;
+  margin-top: 10%;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContact {
+  padding-right: 4%;
+  margin-bottom: 30%;
+  align-self: flex-end;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,13 +45,26 @@ body * {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   letter-spacing: 0.9rem;
 }
 
-h3 {
-  font-size: 3.5rem;
+.mainTitle h3 {
+  font-size: 3rem;
   font-style: italic;
+}
+
+.mainContact h3 {
+  font-size: 3rem;
+}
+
+.contactLink {
+  justify-self: flex-end;
+}
+
+.contactLink h4 {
+  font-size: 2rem;
+  justify-self: flex-end;
 }
 
 h4 {
