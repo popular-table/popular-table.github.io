@@ -30,6 +30,7 @@ body * {
 .mainTitle {
   padding-right: 4%;
   margin-top: 10%;
+  max-width: 70%;
   align-self: flex-end;
   display: flex;
   flex-direction: column;
@@ -40,6 +41,7 @@ body * {
 .mainContact {
   padding-right: 4%;
   margin-bottom: 30%;
+  max-width: 70%;
   align-self: flex-end;
   display: flex;
   flex-direction: column;
@@ -94,7 +96,6 @@ h4 {
   }
 
   .mainTitle {
-    border: 1px solid black;
     max-width: 70%;
     padding: 4%;
     margin: auto;
