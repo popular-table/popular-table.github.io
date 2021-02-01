@@ -10,6 +10,7 @@ body {
 
 body * {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .container {
@@ -17,7 +18,7 @@ body * {
   flex-direction: column;
   height: 100vh;
   max-width: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -49,10 +50,10 @@ h4 {
 }
 
 .crewHead {
+  margin-top: 5%;
   display: flex;
-  width: 100%;
+  width: 90%;
   justify-content: space-around;
-  border: 1px solid black;
 }
 
 .crewHead h1 {
@@ -60,29 +61,76 @@ h4 {
   margin: auto;
 }
 
-.crewHead a {
-  width: 10%;
-  align-self: flex-start;
+
+.bookLink {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 10%;
+    margin: 2%
 }
 
 .profPicsRow {
+  margin-top: 5%;
   width: 90%;
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid black;
 }
 
-.profPic {
-  border-radius: 10px;
-  width: 20%;
+.profPicsRow a {
+    padding: 1%;
+  }
+
+.profPic img {
+  border-radius: 100px;
+  width: 100%;
+  margin: 10%;
+}
+
+.chatFeed * {
 }
 
 .chatFeed {
+  margin-top: 5%;
+  width: 80%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .chatLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  max-height: 300px;
+}
+
+.chatLine a {
+  width: 33%;
+}
+
+.chatLine .recipePic {
+  width: 100%;
+}
+
+.chatLine .profPic {
+  width: 20%;
+}
+
+.chatProfPic {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.chatProfPic img {
+  border-radius: 200px;
+}
+
+.message {
+  align-self: center;
+  font-size: 1.5rem;
+  width: 33%;
 }
 
 /* for small screens */
@@ -91,26 +139,51 @@ h4 {
   html {
   }
 
-  .mainTitle {
-    max-width: 70%;
-    padding: 4%;
+  .crewHead {
+    max-width: 85%;
+    padding: 2%;
     margin: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
-    text-shadow: 2px 1px white;
+    margin: 0px;
   }
 
-  h1 {
-    font-size: 3rem;
-    letter-spacing: 0.5rem;
-  }
-
-  .mainTitle h3 {
+  .crewHead h1 {
     font-size: 2rem;
-    font-style: italic;
-    text-shadow: 2px 1px white;
+    letter-spacing: 0.5rem;
+    margin-top: 5%;
   }
-}
+
+  .bookLink {
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      width: 10%;
+      margin: 2%
+  }
+
+  .profPicsRow{
+    margin: 5% 0px;
+  }
+
+  .chatLine{
+      width: 100%;
+      margin-bottom: 5%;
+  }
+
+  .chatLine .profPic img {
+    padding: 0;
+    margin: 0;
+  }
+
+  .chatProfPic {
+    width: 80%;
+    margin-left: 0%;
+  }
+  .message {
+      font-size: .75rem;
+      width: 50%;
+  }
+
+  
