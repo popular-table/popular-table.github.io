@@ -89,3 +89,7 @@ h2 {
 .top {
   font-weight: bold;
 }
+
+hr {
+    width: 75%;
+}
