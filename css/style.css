@@ -10,13 +10,17 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   font-family: "Comfortaa", cursive;
   font-size: 62.5%;
-  box-sizing: border-box;
+  
   text-align: center;
 }
 
 body * {
+  box-sizing: border-box;
   max-width: 100%;
 }
 
@@ -26,7 +30,7 @@ body * {
   height: 100vh;
   max-width: 100%;
   justify-content: space-between;
-  align-items: center;
+  margin: 0 auto;
 }
 
 h1 {
