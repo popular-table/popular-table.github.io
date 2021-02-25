@@ -1,7 +1,6 @@
-
 /* Main background pic */
 html {
-  background: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1531&q=80")
+  background: url("https://lh3.googleusercontent.com/W5PvDpFYxERbO4rTIz4G789uWJ1UTbm5s8zbHqOUbxoISlXF8TD19eqsn1Peo_9xgoUmwMPoX2X4-UeFEt2Z6Rt3S3MLTrQpDHuIJFfsjFmH7x5Jfs78kv36Gd421K_53a12pOvvtwrELgtupr2NPkrdCSkF4C2N4arviLzISX2XG_Nlhwf0PDVf6M4WXizvihd2KBz54h59rG27-M6QAU-XQ1OuFjUcKc-rtzIWeL5nVKQjfevuHsCkqAiaEweFSB9_JieS1B5eq3zbrfz-ZE8FDNXdeNCB37NdoolF8Ar7vnb3EINbLS8vlEcTZq-yipyu8-MvvmH0Eh1_7NRPRj7HalKAFbHar5J5bKAtELgXbJBwKyQfEg2KrD5mwwU4eouatCsmPLvNvi4GpS8IdLFN01OXaqHA9qk_6aZPBh00iSHdCCQIlF5MhXHn43sei2Dl8pKK4VEcPWpNJzXQhCbbdZFUdu-IFvoxw_LoB-Fn9pR9OuLdE-0RGU453_JvNiI14nq4rhrcA_tkDSOxW81oca1yoRnCYi9fqJdyq0GwPEGaiqL5irYvyjCCyhu47rJHc2lU4_xdk-bgLaE6vKKzAfkjoVIdYMpMTIHZ4oyOnxsAC5BPc0YeBoMX8Q4uY-0o0-MT74Eqbh-Qw9YqEHg86VzcLCq4_jhJqc3k0DYHYdOXitAdGnnAYY3dukA=w391-h220-no?authuser=0")
     no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -15,7 +14,6 @@ body {
   width: 100%;
   font-family: "Comfortaa", cursive;
   font-size: 62.5%;
-  
   text-align: center;
 }
 
@@ -31,6 +29,7 @@ body * {
   max-width: 100%;
   justify-content: space-between;
   margin: 0 auto;
+  color: rgb(19, 28, 41);
 }
 
 h1 {
@@ -43,13 +42,12 @@ h4 {
   font-size: 2.5rem;
 }
 
-
 /* Main page text */
 .mainTitle {
   padding-right: 4%;
   margin-top: 10%;
   max-width: 70%;
-  align-self: flex-end;
+  align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,14 +79,6 @@ h4 {
 /* for small screens */
 @media only screen and (max-width: 800px) {
   /* Different picture */
-  html {
-    background: url("https://images.unsplash.com/photo-1481931098730-318b6f776db0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=637&q=80");
-      no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
 
   .mainTitle {
     max-width: 70%;
@@ -104,7 +94,7 @@ h4 {
 
   h1 {
     font-size: 3rem;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
   }
 
   h4 {
@@ -117,4 +107,7 @@ h4 {
     text-shadow: 2px 1px white;
   }
 
+  #email {
+    font-size: 1rem;
+  }
 }
